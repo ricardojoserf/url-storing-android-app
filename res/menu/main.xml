@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.listaprueba1.MainActivity" >
+    
+    <item android:id="@+id/item1" android:checkable="false" android:orderInCategory="1" android:title="@string/a_adir_url" android:icon="@drawable/suma2"></item>
+    <item android:id="@id/imageView1" android:orderInCategory="2" android:title="@string/borrar" android:icon="@drawable/papelera"></item>
+    <item android:id="@id/imageView2" android:icon="@drawable/ic_launcher" android:title="@string/descripcion" android:orderInCategory="3"></item>
+
+    
+</menu>
