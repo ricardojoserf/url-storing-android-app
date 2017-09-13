@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">URLO: URL Organizer</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="a_adir_url">Añadir URL</string>
+    <string name="borrar_todo">BORRAR TODO</string>
+    <string name="button">Button</string>
+    <string name="borrar">BORRAR</string>
+    <string name="a_adir">AÑADIR</string>
+    <string name="descripcion">Descripcion</string>
+    <string name="url_organiser">URL Organiser</string>
+    <string name="urlo_url_organiser">URLO: URL Organiser</string>
+    <string name="para_empezar_pulsa_el_bot_n_y_a_ade_una_url">Para empezar, pulsa el botón + y añade una url</string>
+    <string name="para_empezar_pulsa_el_bot_n_para_a_adir_una_url">Para empezar, pulsa el botón + para añadir una url</string>
+    <string name="_para_empezar_pulsa_el_bot_n_para_a_adir_una_url">" Para empezar, pulsa el botón    '+' para añadir una url"</string>
+    <string name="_para_empezar_pulsa_el_bot_n_para_a_adir_una_url_">" Para empezar, pulsa el botón   \t '+' para añadir una url."</string>
+    <string name="urlo_url_organizer">URLO: URL Organizer</string>
+    <string name="urlo_the_url_organizer">URLO!: the URL organizer</string>
+    <string name="urlo_url_organizer2">URLO: URL Organizer</string>
+
+</resources>
