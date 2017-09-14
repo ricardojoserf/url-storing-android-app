@@ -2,4 +2,4 @@
 App for storing urls (developed in ~2014)
 
 
-#### [Download .apk](https://drive.google.com/open?id=0B6XTdSmL7LIPNzVXTG1KVjlic3c)
+## [Download from Google Play!](https://play.google.com/store/apps/details?id=fry.urlo)
