@@ -7,9 +7,14 @@ import android.content.DialogInterface.OnClickListener;
 import android.graphics.Color;
 import android.text.InputType;
 import android.text.method.PasswordTransformationMethod;
+import android.view.Gravity;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import static android.content.DialogInterface.BUTTON_NEGATIVE;
+import static android.content.DialogInterface.BUTTON_POSITIVE;
 
 /**
  * helper for Prompt-Dialog creation
@@ -23,45 +28,39 @@ public abstract class PromptDialog extends AlertDialog.Builder implements OnClic
  /**
   */
  public PromptDialog(Context context) {
-  super(context);
-  
-    setTitle("Creación de un nuevo botón \n");
+    super(context);
 
-    texto1 = new TextView(context);
-    texto1.setText("\nIntroduzca un título para el botón:");
-    texto1.setTextColor(Color.GRAY);
-    texto1.setTextSize(15);
-
-    texto2 = new TextView(context);
-    texto2.setText("\nIntroduzca la URL de la página web:");
-    texto2.setTextColor(Color.GRAY);
-    texto2.setTextSize(15);
-
+    setTitle("New url!");
 
     miLayout= new LinearLayout(context);
     miLayout.setOrientation(LinearLayout.VERTICAL);
 
+    texto1 = new TextView(context);
+    texto1.setText("\n\n");
+    texto2 = new TextView(context);
+    texto2.setText("\n\n");
+    texto3 = new TextView(context);
+    texto3.setText("\n\n");
+    texto3.setTextSize(15);
+
     input1 = new EditText(context);
+    input1.setHint("Title");
     input2 = new EditText(context);
     input2.setInputType(InputType.TYPE_TEXT_VARIATION_EMAIL_ADDRESS);
-
-     texto3 = new TextView(context);
-     texto3.setText("\n");
-     texto3.setTextSize(15);
-
-
+    input2.setHint("URL");
 
     miLayout.addView(texto1);
     miLayout.addView(input1);
     miLayout.addView(texto2);
-     miLayout.addView(input2);
-     miLayout.addView(texto3);
+    miLayout.addView(input2);
+    miLayout.addView(texto3);
 
+    miLayout.setGravity(Gravity.CENTER);
     setView(miLayout);
 
-    setPositiveButton("Ok", this);
-    setNegativeButton("Cancel", this);
- 
+    setNeutralButton("Cancel", this);
+    setPositiveButton("OK", this);
+
  }
  
  /**
@@ -76,7 +75,7 @@ public abstract class PromptDialog extends AlertDialog.Builder implements OnClic
  
  @Override
  public void onClick(DialogInterface dialog, int which) {
-  if (which == DialogInterface.BUTTON_POSITIVE) {
+  if (which == BUTTON_POSITIVE) {
    if (onOkClicked(  input1.getText().toString() , input2.getText().toString() )) {
     dialog.dismiss();
    }

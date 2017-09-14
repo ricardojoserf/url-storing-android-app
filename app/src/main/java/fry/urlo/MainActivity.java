@@ -51,7 +51,7 @@ public class MainActivity extends Activity {
         cargarBaseDeDatos();
 
         //Inicializar el adaptador con la fuente de datos
-        adaptador = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, array);
+        adaptador = new ArrayAdapter<String>(this, R.layout.list_element, array);
 
         //Relacionando la lista con el adaptador
         lista.setAdapter(adaptador);
@@ -91,9 +91,6 @@ public class MainActivity extends Activity {
 
                 if (borrar == true) {
 
-                    // change the checkbox state
-                    //CheckedTextView checkedTextView = ((CheckedTextView)view);
-                    //checkedTextView.setChecked(!checkedTextView.isChecked());
                     System.out.println(position);
                     System.out.println(lista.isItemChecked(position));
                     lista.setItemChecked(position, (lista.isItemChecked(position)) );
@@ -162,7 +159,7 @@ public class MainActivity extends Activity {
 
         if(!borrar){
 
-            ArrayAdapter<String>  adaptador2 = new ArrayAdapter<String>(getBaseContext(), android.R.layout.simple_list_item_multiple_choice, array);
+            ArrayAdapter<String>  adaptador2 = new ArrayAdapter<String>(getBaseContext(), R.layout.list_element_choice, array);
 
             lista.setAdapter(adaptador2);
 

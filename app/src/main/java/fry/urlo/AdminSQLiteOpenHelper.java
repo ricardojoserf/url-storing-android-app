@@ -13,15 +13,11 @@ public class AdminSQLiteOpenHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        //db.execSQL("create table votantes(dni integer primary key, nombre text, colegio text, nromesa integer)");
         db.execSQL("create table enlaces(nombre text, url text)");
-       
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int versionAnte, int versionNue) {
-    	//db.execSQL("drop table if exists votantes");
-        //db.execSQL("create table votantes(dni integer primary key, nombre text, colegio text, nromesa integer)");    
         db.execSQL("drop table if exists enlaces");
         db.execSQL("create table enlaces(nombre text, url text)");    
     }    

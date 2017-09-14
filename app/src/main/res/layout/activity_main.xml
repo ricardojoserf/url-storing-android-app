@@ -36,7 +36,8 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:visibility="invisible"
-        android:text="@string/_para_empezar_pulsa_el_bot_n_para_a_adir_una_url_"
+        android:gravity="center"
+        android:text="@string/to_get_started_click_the_button_to_add_a_url"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <ImageButton
